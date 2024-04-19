@@ -1,0 +1,96 @@
+@import url(trans.css);
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    width: 100vw;
+    height: 7vh;
+    background-color: white;
+    display: flex;
+}
+
+.header label{
+    position: relative;
+    top: 50%;
+    color: black;
+    font-size: medium;
+}
+
+
+.oda-logo {
+    margin-left: 10vw;
+    margin-right: 1vw;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+
+.oda-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+
+
+
+.navigation a{
+    text-decoration: none;
+    color: #ff7200;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    
+}
+
+.navigation a:hover{
+    color: #fff;
+    animation: grow 2s ease-in-out forwards;
+    background: #ff7200;
+}
+.navigation a.active{
+    background: #ff7200;
+    color: #fff;
+}
+
+
+
+.body{
+    position: relative;
+    top: 10vh;
+    display: flex;
+}
+
+.body_text{
+    flex: 1;
+    word-spacing: 3px;
+}
+
+.body_text h2{
+    padding-bottom: 1vh;
+}
+
+.picture{
+    flex: 1;
+}
+
+.picture img{
+ width: 50%;
+
+}
