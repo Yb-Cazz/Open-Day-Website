@@ -10,6 +10,18 @@
     overflow-x: hidden;
 } */
 
+.floating-action-button{
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(69, 69, 220);
+    z-index: 100;
+    box-shadow:  0 0 5px black;
+}
+
 .header{
     width: 100%;
     height: 65px;
@@ -272,6 +284,19 @@ ul li a:hover {
 }
 
 
+.welcome-text-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text-div div{
+    height: 2px;
+    width: 120px;
+    background-color: black;
+}
+
 label{
     font-family: 'Poppins';
     /* color: #ff7200; */
@@ -284,11 +309,13 @@ label{
     display: flex;
     width: 95vw;
     padding-top: 30px;
-    height: 30vh;
+    padding-bottom: 20px;
+    /* height: 300px; */
 }
 
 .Welcome_image{
-    flex: 2;
+    flex: 1.5;
+    height: 100%;
 }
 
 .Welcome_image img{
@@ -298,11 +325,12 @@ label{
 
 .welcome_text{
     flex: 1;
-    text-align: left;
+    text-align: justify;
     font-size: 20px;
-    word-spacing: 5px;
+    line-height: 30px;
     color: #524e4c;
     margin-left: 5vw;
+    height: 100%;
 }
 
 
@@ -312,6 +340,19 @@ label{
     padding: 100px 15px;
     /* margin-top: 50px; */
     background-color: rgb(236, 233, 233);
+}
+
+.admin-label-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-label-div div{
+    height: 2px;
+    width: 120px;
+    background-color: black;
 }
 
 .admin-div{
@@ -329,6 +370,7 @@ label{
     height: 400px;
     margin: 0 3px;
     padding-top: 50px;
+    box-shadow: 0 0 3px black;
 }
 
 .admin-div .profile-div div{
@@ -340,12 +382,102 @@ label{
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    box-shadow: 0 0 5px black;
+    
 }
 
 .admin-div .profile-div div img{
     width: 80%;
     height: 80%;
     border-radius: 50%;
+}
+
+.academics{
+    /* width: 100%; */
+    height: fit-content;
+    padding: 100px 15px;
+    color: #524e4c;
+}
+
+.aacademics-label-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.academics-label-div div{
+    height: 2px;
+    width: 100px;
+    background-color: black;
+}
+
+.academic-level{
+    display: flex;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.academic-level div{
+    flex: 1;
+    margin: 10px;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+    padding: 0 6px;
+}
+
+/* .academic-level div:hover{
+    box-shadow: 0 0 5px black;
+} */
+
+.academic-level div img{
+    width: 100%;
+    height: 40%;
+}
+
+.academic-level div h2{
+    align-self: flex-start;
+    margin: 0 0 15px 0;
+    background-color: #ff7200;
+    width: 100%;
+    height: 50px;
+    opacity: 0.9;
+}
+
+.admission-div{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.admission-div :first-child{
+    height: 80px;
+    width: 100%;
+    background-color: #d79966;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admission-div :last-child{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(95, 95, 206);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+
+.footer{
+    background-color: rgb(29, 27, 32);
+    height: 500px;
 }
 
 .animate {
